@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["signup"])) {
 
         if ($stmt->execute()) {
             $registrationSuccess = true;
-            header("Location: login.php");
+            header("Location: login.html");
             echo "User registration successful!";
         } else {
             $registrationSuccess = false;
