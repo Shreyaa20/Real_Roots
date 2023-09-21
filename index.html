@@ -101,7 +101,8 @@
                 <h1 class="heading-secondary">RealRoots</h1>
                 <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h2>
                 <h2 style="text-align: center" class="heading-secondary">Sign Up</h2>
-                <form method="post" action="login.html" class="form">
+                <form method="post" action="javascript:void(0);" class="form" onsubmit="redirectToLoginPage()">
+
                     <!-- Signup form fields here -->
                      <!-- Signup form fields here -->
                      
@@ -168,6 +169,13 @@
                 <p style="background-color:white "class="card__toggle">Already have an account? <span id="toggle-login"><a href="http://localhost/project/real-estate-html-template/login.php">Login</span></p>
             </div>
         </div>
+        <script>
+            function redirectToLoginPage() {
+                // Redirect to login.html
+                window.location.href = 'login.html';
+            }
+        </script>
+        
         <!--<script>
         document.getElementById('signupForm').addEventListener('submit', function (e) {
             e.preventDefault(); // Prevent the form from submitting the traditional way
