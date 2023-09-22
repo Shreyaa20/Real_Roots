@@ -16,10 +16,8 @@ $queryrent = "SELECT * FROM property Where Listing='Rent'";
 // Execute the query
 $resultsell = mysqli_query($con, $querysell);
 
-
-// Check if the query was successful
-
 echo'
+// Check if the query was successful
 <!DOCTYPE html>
 <html lang="en">
 
@@ -79,21 +77,21 @@ echo'
                     </button>
                     <div class="collapse navbar-collapse" id="navbarCollapse">
                         <div class="navbar-nav ms-auto">
-                            <a href="index.php" class="nav-item nav-link active">Home</a>
+                            <a href="main_project.html" class="nav-item nav-link active">Home</a>
                             <a href="about.html" class="nav-item nav-link">About</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Property</a>
                                 <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="property-list.php" class="dropdown-item">Property List</a>
-                                    <a href="property-type.php" class="dropdown-item">Property Type</a>
-                                    <a href="property-agent.php" class="dropdown-item">Property Agent</a>
+                                    <a href="property-list.html" class="dropdown-item">Property List</a>
+                                    <a href="property-type.html" class="dropdown-item">Property Type</a>
+                                    <a href="property-agent.html" class="dropdown-item">Property Agent</a>
                                 </div>
                             </div>
                         
                             <a href="testimonial.html" class="nav-item nav-link">Reviews</a>
-                            <a href="contact.php" class="nav-item nav-link">Contact</a>
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
                             <li class="nav-item">
-                        <form method="post" action="logout.php">
+                        <form method="post" action="login.html">
                         <button style="border:none " type="submit" class="nav-item nav-link" name="logout">Logout</button>
                         </form>
                         </li>
@@ -437,4 +435,6 @@ echo'
 </body>
 
 </html>';
+
+       
 ?>
