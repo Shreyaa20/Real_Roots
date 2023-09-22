@@ -497,7 +497,71 @@
         <script src="js/main.js"></script>
         <!-- Add jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+         
+           
     
+            // Event handler for clicking the "For Sell" tab
+            $("#tab-1-link").click(function () {
+                $("#apartment").show();
+                $("society").hide();
+                $("building").hide();
+                $("home").hide();
+                $("office").hide();
+                $("shop").hide();
+
+            });
+    
+            // Event handler for clicking the "For Rent" tab
+            $("#tab-2-link").click(function () {
+                $("#apartment").hide();
+                $("society").show();
+                $("building").hide();
+                $("home").hide();
+                $("office").hide();
+                $("shop").hide();
+
+            });
+            $("#tab-2-link").click(function () {
+                $("#apartment").hide();
+                $("society").hide();
+                $("building").show();
+                $("home").hide();
+                $("office").hide();
+                $("shop").hide();
+
+            });
+            $("#tab-2-link").click(function () {
+                $("#apartment").hide();
+                $("society").hide();
+                $("building").hide();
+                $("home").show();
+                $("office").hide();
+                $("shop").hide();
+
+            });
+            $("#tab-2-link").click(function () {
+                $("#apartment").hide();
+                $("society").hide();
+                $("building").hide();
+                $("home").hide();
+                $("office").show();
+                $("shop").hide();
+
+            });
+            $("#tab-2-link").click(function () {
+                $("#apartment").hide();
+                $("society").hide();
+                $("building").hide();
+                $("home").hide();
+                $("office").hide();
+                $("shop").show();
+
+            });
+
+        });
+    </script>
    
     <script>
         function redirectToLoginPage() {
