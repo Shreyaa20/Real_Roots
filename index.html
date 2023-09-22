@@ -99,7 +99,7 @@
     <!-- Success message will be displayed here -->
                 </div>
                 <h1 class="heading-secondary">RealRoots</h1>
-                <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h2>
+                <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h3>
                 <h2 style="text-align: center" class="heading-secondary">Sign Up</h2>
                 <form  action="javascript:void(0);" class="form" onsubmit=" validate(event)">
 
@@ -170,40 +170,40 @@
             </div>
         </div>
         <script>
-            function validate(event){
-            event.preventDefault(); // Prevent the form from submitting
+            function validate(event) {
+                event.preventDefault(); // Prevent the form from submitting
         
-        // Get form input values
-        const userName = document.querySelector('input[name="userName"]').value.trim();
-        const firstName = document.querySelector('input[name="firstName"]').value.trim();
-        const lastName = document.querySelector('input[name="lastName"]').value.trim();
-        const contact = document.querySelector('input[name="contact"]').value.trim();
-        const signupEmail = document.querySelector('input[name="signupEmail"]').value.trim();
-        const signupPassword = document.querySelector('input[name="signupPassword"]').value.trim();
-
-        // Check if any of the fields are empty
-        if (
-            userName === "" ||
-            firstName === "" ||
-            lastName === "" ||
-            contact === "" ||
-            signupEmail === "" ||
-            signupPassword === ""
-        ) {
-            alert("Please fill in all required fields.");
-        } else {
-            // All fields are filled, you can proceed with form submission
-            // Redirect to the login page or perform any other necessary actions
-            redirectToLoginPage();
-        }}
-    
-
-        function redirectToLoginPage() {
-        // Redirect to login.html
-        window.location.href = 'login.html';
-        }
-</script>
-
+                // Get form input values
+                const userName = document.querySelector('input[name="userName"]').value.trim();
+                const firstName = document.querySelector('input[name="firstName"]').value.trim();
+                const lastName = document.querySelector('input[name="lastName"]').value.trim();
+                const contact = document.querySelector('input[name="contact"]').value.trim();
+                const signupEmail = document.querySelector('input[name="signupEmail"]').value.trim();
+                const signupPassword = document.querySelector('input[name="signupPassword"]').value.trim();
+        
+                // Check if any of the fields are empty
+                if (
+                    userName === "" ||
+                    firstName === "" ||
+                    lastName === "" ||
+                    contact === "" ||
+                    signupEmail === "" ||
+                    signupPassword === ""
+                ) {
+                    alert("Please fill in all required fields.");
+                } else {
+                    // All fields are filled, you can proceed with form submission
+                    // Redirect to the login page or perform any other necessary actions
+                    redirectToLoginPage();
+                }
+            }
+        
+            function redirectToLoginPage() {
+                // Redirect to login.html
+                window.location.href = 'login.html';
+            }
+        </script>
+        
 
 
 
