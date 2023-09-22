@@ -101,7 +101,7 @@
                 <h1 class="heading-secondary">RealRoots</h1>
                 <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h2>
                 <h2 style="text-align: center" class="heading-secondary">Sign Up</h2>
-                <form  action="javascript:void(0);" class="form" onsubmit="redirectToLoginPage()">
+                <form  action="javascript:void(0);" class="form" onsubmit="redirectToLoginPage(event)">
 
                     <!-- Signup form fields here -->
                      <!-- Signup form fields here -->
@@ -170,38 +170,46 @@
             </div>
         </div>
         <script>
-            function redirectToLoginPage() {
-                // Redirect to login.html
-                window.location.href = 'login.html';
-            }
-        </script>
+            event.preventDefault(); // Prevent the form from submitting
         
-        <!--<script>
-        document.getElementById('signupForm').addEventListener('submit', function (e) {
-            e.preventDefault(); // Prevent the form from submitting the traditional way
-            
-            // Use JavaScript to submit the form via AJAX
-            var formData = new FormData(this);
-            var xhr = new XMLHttpRequest();
+        // Get form input values
+        const userName = document.querySelector('input[name="userName"]').value.trim();
+        const firstName = document.querySelector('input[name="firstName"]').value.trim();
+        const lastName = document.querySelector('input[name="lastName"]').value.trim();
+        const contact = document.querySelector('input[name="contact"]').value.trim();
+        const signupEmail = document.querySelector('input[name="signupEmail"]').value.trim();
+        const signupPassword = document.querySelector('input[name="signupPassword"]').value.trim();
+
+        // Check if any of the fields are empty
+        if (
+            userName === "" ||
+            firstName === "" ||
+            lastName === "" ||
+            contact === "" ||
+            signupEmail === "" ||
+            signupPassword === ""
+        ) {
+            alert("Please fill in all required fields.");
+        } else {
+            // All fields are filled, you can proceed with form submission
+            // Redirect to the login page or perform any other necessary actions
+            redirectToLoginPage();
+        }
+    
+
+        function redirectToLoginPage() {
+        // Redirect to login.html
+        window.location.href = 'login.html';
+        }
+</script>
+
+
+
+
+
+
         
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === XMLHttpRequest.DONE) {
-                    if (xhr.status === 200) {
-                        // Successful signup, show a message and redirect
-                        document.getElementById('success-message').innerHTML = 'Signup successful!';
-                        setTimeout(function () {
-                            window.location.href = 'http://localhost/project/real-estate-html-template/login.php';
-                        }, 2000); // Redirect after 2 seconds
-                    } else {
-                        // Handle signup error here, display an error message
-                        document.getElementById('success-message').innerHTML = 'Signup failed.';
-                    }
-                }
-            };
-        
-            xhr.open('POST', 'signup.php', true);
-            xhr.send(formData);
-        });</script>-->
+       
         
 </body>
 </html>
