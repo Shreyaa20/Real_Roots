@@ -99,7 +99,7 @@
                 <h1 class="heading-secondary">RealRoots</h1>
                 <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h2>
                 <h2 style="text-align: center" class="heading-secondary">Login</h2>
-                <form method="post" action=login.php class="form">
+                <form  action="javascript:void(0);" class="form" onsubmit="redirectToHomePage()">
                     <!-- Signup form fields here -->
                      <!-- Signup form fields here -->
                     <!-- Login form fields here -->
@@ -130,5 +130,12 @@
             
         
     </div>
+    <script>
+        function redirectToHomePage() {
+            // Redirect to main_project.html
+            alert("The project uses server side script php for backend and will not reflect database operations!")
+            window.location.href = 'main_project.html';
+        }
+    </script>
 </body>
 </html>
