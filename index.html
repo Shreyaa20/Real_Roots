@@ -101,7 +101,7 @@
                 <h1 class="heading-secondary">RealRoots</h1>
                 <h3 style="text-align: center" class="heading-secondary">Where Dreams find Home</h2>
                 <h2 style="text-align: center" class="heading-secondary">Sign Up</h2>
-                <form  action="javascript:void(0);" class="form" onsubmit="redirectToLoginPage(event)">
+                <form  action="javascript:void(0);" class="form" onsubmit=" validate(event)">
 
                     <!-- Signup form fields here -->
                      <!-- Signup form fields here -->
@@ -170,6 +170,7 @@
             </div>
         </div>
         <script>
+            function validate(event){
             event.preventDefault(); // Prevent the form from submitting
         
         // Get form input values
@@ -194,7 +195,7 @@
             // All fields are filled, you can proceed with form submission
             // Redirect to the login page or perform any other necessary actions
             redirectToLoginPage();
-        }
+        }}
     
 
         function redirectToLoginPage() {
