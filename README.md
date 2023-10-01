@@ -1,4 +1,5 @@
 ﻿# Real_Roots
 
- https://github.com/Shreyaa20/Real_Roots/assets/92789290/03c4ee85-e375-46bc-abf9-4ae88c06b1fa
+ ![RealRoots Demo](https://github.com/Shreyaa20/Real_Roots/assets/132921008/c1b6ba67-709f-4424-aacb-fe44889f1834)
+
 
